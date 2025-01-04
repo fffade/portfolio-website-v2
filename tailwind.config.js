@@ -2,8 +2,12 @@
 module.exports = {
   content: [],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        robotoCondensed: ["Roboto Condensed", "Arial"],
+        hostGrotesk: ["Host Grotesk", "Trebuchet MS", "Arial"]
+      }
+    },
   },
   plugins: [],
 }
-
