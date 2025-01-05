@@ -24,8 +24,8 @@ function App() {
         <HashRouter>
           <Routes>
             <Route path="/" element={<HomePage />} />
-            <Route path="/about/" element={<About />} />
-            <Route path="/contact/" element={<Contact />} />
+            <Route path="/#/about/" element={<About />} />
+            <Route path="/#/contact/" element={<Contact />} />
           </Routes>
         </HashRouter>
 
