@@ -10,7 +10,7 @@ import About from './components/About';
 import Contact from './components/Contact';
 import Socials from './components/Socials';
 import React from 'react';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { HashRouter, Routes, Route } from 'react-router-dom';
 
 
 function App() {
@@ -21,13 +21,13 @@ function App() {
 
       <main className="container-fluid justify-center flex flex-col min-h-3/4">
 
-        <BrowserRouter>
+        <HashRouter>
           <Routes>
             <Route path="/" element={<HomePage />} />
             <Route path="/about/" element={<About />} />
             <Route path="/contact/" element={<Contact />} />
           </Routes>
-        </BrowserRouter>
+        </HashRouter>
 
         <Socials />
 

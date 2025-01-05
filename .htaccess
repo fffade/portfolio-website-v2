@@ -5,7 +5,3 @@ RewriteBase /
 RewriteCond %{HTTP_HOST} ^(?:www\.)?fffadedev\.com$ [NC]
 RewriteCond %{REQUEST_URI} !^/build/
 RewriteRule (.*) /build/$1
-
-RerwiteCond %{REQUEST_FILENAME} !-f
-RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule (.*) /build/$1 [L]
