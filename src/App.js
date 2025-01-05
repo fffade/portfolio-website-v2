@@ -17,21 +17,24 @@ function App() {
   return (
     <div className="container-fluid flex flex-col overflow-x-hidden min-w-screen min-h-screen bg-slate-800">
 
-      <Header />
+      <HashRouter>
 
-      <main className="container-fluid justify-center flex flex-col min-h-3/4">
+        <Header />
 
-        <HashRouter>
-          <Routes>
-            <Route path="/" element={<HomePage />} />
-            <Route path="/#/about/" element={<About />} />
-            <Route path="/#/contact/" element={<Contact />} />
-          </Routes>
-        </HashRouter>
+          <main className="container-fluid justify-center flex flex-col min-h-3/4">
 
-        <Socials />
+            <Routes>
+              <Route path="/" element={<HomePage />} />
+              <Route path="/about/" element={<About />} />
+              <Route path="/contact/" element={<Contact />} />
+            </Routes>
 
-      </main>
+
+          </main>
+
+          <Socials />
+
+      </HashRouter>
     </div>
   );
 }
