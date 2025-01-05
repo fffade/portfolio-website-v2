@@ -1,10 +1,11 @@
 RewriteEngine on
 
+RewriteBase /
+
 RewriteCond %{HTTP_HOST} ^(?:www\.)?fffadedev\.com$ [NC]
 RewriteCond %{REQUEST_URI} !^/build/
 RewriteRule (.*) /build/$1 [L]
 
-RewriteBase /build/
 RerwiteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule . /index.html [L]
+RewriteRule . /build/index.html [L]
