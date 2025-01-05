@@ -18,7 +18,6 @@ function App() {
     <div className="container-fluid flex flex-col overflow-x-hidden min-w-screen min-h-screen bg-slate-800">
 
       <HashRouter>
-
         <Header />
 
           <main className="container-fluid justify-center flex flex-col min-h-3/4">
