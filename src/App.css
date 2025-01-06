@@ -20,9 +20,10 @@
 }
 
 /* All */
-*
+html, body
 {
   scroll-behavior: smooth;
+  font-size: 12px;
 }
 
 /* Default text styling */
