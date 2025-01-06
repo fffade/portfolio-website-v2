@@ -1,7 +1,8 @@
 RewriteEngine on
 
-RewriteBase /
+RewriteCond %{DOCUMENT_ROOT}%{REQUEST_URI} -f [OR]
+RewriteCond %{DOCUMENT_ROOT}%{REQUEST_URI} -d
+RewriteRule ^ - [L]
 
-RewriteCond %{HTTP_HOST} ^(?:www\.)?fffadedev\.com$ [NC]
-RewriteCond %{REQUEST_URI} !^/build/
-RewriteRule (.*) /build/$1 [L]
+# Fallback all other routes to index.html
+RewriteRule ^ /build/index.html [L]
