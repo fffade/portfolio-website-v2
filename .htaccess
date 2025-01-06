@@ -1,6 +1,5 @@
 RewriteEngine on
 
 RewriteCond %{REQUEST_FILENAME} !-f
-RewriteCond %{REQUEST_URI} !#
-RewriteCond %{REQUEST_URI} !(.*)/$
+RewriteCond %{REQUEST_URI} !^/build
 RewriteRule ^(.*)$ /build/$l [L,QSA]
