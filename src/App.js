@@ -24,7 +24,7 @@ function App() {
         <main className="container-fluid justify-center flex flex-col min-h-3/4">
 
           <Routes>
-            <Route exact path="/" element={<HomePage />} exact />
+            <Route exact path="/" element={<HomePage />} />
             <Route path="/about" element={<About />} />
             <Route path="/contact" element={<Contact />} />
           </Routes>
