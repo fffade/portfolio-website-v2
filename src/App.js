@@ -17,8 +17,6 @@ function App() {
   return (
     <div className="container-fluid flex flex-col overflow-x-hidden min-w-screen min-h-screen bg-slate-800">
 
-      <HashRouter>
-
         <Header />
 
         <main className="container-fluid justify-center flex flex-col min-h-3/4">
@@ -26,15 +24,13 @@ function App() {
           <Routes>
             <Route path="/about" element={<About />} />
             <Route path="/contact" element={<Contact />} />
-            <Route exact path="/" element={<HomePage />} />
+            <Route path="/" element={<HomePage />} />
           </Routes>
-
 
         </main>
 
         <Socials />
 
-      </HashRouter>
     </div>
   );
 }
