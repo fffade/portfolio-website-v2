@@ -1,4 +1,4 @@
 RewriteEngine on
 
-RewriteCond %{REQUEST_URI} !^/build/(.*)$
-RewriteRule ^(.*)$ /build/$1 [L,QSA]
+RewriteCond %{REQUEST_URI} ^/build(.*)$
+RewriteRule .* build/ [L]
