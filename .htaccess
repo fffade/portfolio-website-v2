@@ -2,4 +2,5 @@ RewriteEngine on
 
 RewriteCond %{DOCUMENT_ROOT}%{REQUEST_URI} -f [OR]
 RewriteCond %{DOCUMENT_ROOT}%{REQUEST_URI} -d
-RewriteRule ^ /build?index.html [L]
+RewriteCond %{DOCUMENT_ROOT}%{REQUEST_URI} !^/build/
+RewriteRule ^ /build/index.html [L]
