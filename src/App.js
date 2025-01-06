@@ -10,14 +10,14 @@ import About from './components/About';
 import Contact from './components/Contact';
 import Socials from './components/Socials';
 import React from 'react';
-import { HashRouter, Routes, Route } from 'react-router-dom';
+import { BrowserRouter, HashRouter, Routes, Route } from 'react-router-dom';
 
 
 function App() {
   return (
     <div className="container-fluid flex flex-col overflow-x-hidden min-w-screen min-h-screen bg-slate-800">
 
-      <HashRouter basename={process.env.PUBLIC_URL}>
+      <BrowserRouter basename={process.env.PUBLIC_URL}>
         <Header />
 
           <main className="container-fluid justify-center flex flex-col min-h-3/4">
@@ -33,7 +33,7 @@ function App() {
 
           <Socials />
 
-      </HashRouter>
+      </BrowserRouter>
     </div>
   );
 }
