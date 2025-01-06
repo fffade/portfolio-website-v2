@@ -17,14 +17,14 @@ function App() {
   return (
     <div className="container-fluid flex flex-col overflow-x-hidden min-w-screen min-h-screen bg-slate-800">
 
-      <BrowserRouter basename={process.env.PUBLIC_URL}>
+      <BrowserRouter>
         <Header />
 
           <main className="container-fluid justify-center flex flex-col min-h-3/4">
 
             <Routes>
               <Route exact path="/" element={<HomePage />} exact />
-              <Route path="/about" element={<About />} />
+              <Route path="/build/about" element={<About />} />
               <Route path="/contact" element={<Contact />} />
             </Routes>
 
