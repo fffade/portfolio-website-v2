@@ -17,7 +17,7 @@ function App() {
   return (
     <div className="container-fluid flex flex-col overflow-x-hidden min-w-screen min-h-screen bg-slate-800">
 
-      <BrowserRouter>
+      <HashRouter>
 
         <Header />
 
@@ -34,7 +34,7 @@ function App() {
 
         <Socials />
 
-      </BrowserRouter>
+      </HashRouter>
     </div>
   );
 }
