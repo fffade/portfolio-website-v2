@@ -11,12 +11,12 @@
 /* Fonts */
 @font-face {
     font-family: "Roboto Condensed";
-    src: url(../public/assets/RobotoCondensed-VariableFont_wght.ttf);
+    src: url("./RobotoCondensed-VariableFont_wght.ttf");
 }
 
 @font-face {
   font-family: "Host Grotesk";
-  src: url(../public/assets/HostGrotesk-VariableFont_wght.ttf);
+  src: url("./public/assets/HostGrotesk-VariableFont_wght.ttf");
 }
 
 /* All */
