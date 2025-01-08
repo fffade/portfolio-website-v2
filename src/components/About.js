@@ -6,6 +6,9 @@
   Defines the about page where visitor can learn more about me
 */
 import React from 'react';
+import { Link } from 'react-router-dom';
+import { HashLink } from 'react-router-hash-link';
+import { PrimaryButton } from './Buttons';
 
 // Skill displayed in skill box
 function Skill(props) {
@@ -44,7 +47,7 @@ function About() {
           <p className="text-xl text-white p-2">I completed my B.S. Software Development. I've learnt more about web development than I have ever before, working on many of my own personal projects with varying purposes. Every obstacle to me is a learning opportunity. I am eager to take on any challenging client problem, contribute my web development and problem solving skills, and develop my own innovative solutions.</p>
         </div>
 
-        <a className="m-16 text-4xl text-white transition-all hover:scale-110 hover:text-gray-200" href="#skills-box"><i className="fa-solid fa-arrow-down" /></a>
+        <HashLink className="m-16 text-4xl text-white transition-all hover:scale-110 hover:text-gray-200" to="/about#skills-box"><i className="fa-solid fa-arrow-down" /></HashLink>
 
         { /* Skills and Experiences */ }
 
@@ -53,6 +56,10 @@ function About() {
       <div className="container-fluid flex flex-col bg-neutral-900 w-screen min-h-64 items-center justify-start gap-y-16 p-24">
 
         <div className="container w-1/3 max-w-1/3">
+
+          <PrimaryButton clickHandle={() => {}} icon="fa-solid fa-book" text="VIEW MY PROJECTS" />
+
+          <br />
 
           <p className="text-3xl text-amber-400">Skills</p>
 

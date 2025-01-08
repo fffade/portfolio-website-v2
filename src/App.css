@@ -24,6 +24,7 @@ html, body
 {
   scroll-behavior: smooth;
   font-size: 12px;
+  overflow: auto;
 }
 
 /* Default text styling */
