@@ -2,4 +2,4 @@
   deployment:
     tasks:
       - export DEPLOYPATH=/home/fffachms/public_html/
-      - /bin/cp -r /home/fffachms/repositories/portfolio/build/* $DEPLOYPATH
+      - /bin/cp -r /home/fffachms/repositories/portfolio-website-v2/build/* $DEPLOYPATH
