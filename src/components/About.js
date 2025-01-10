@@ -9,6 +9,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { HashLink } from 'react-router-hash-link';
 import { PrimaryButton } from './Buttons';
+import { useNavigate } from 'react-router';
 
 // Skill displayed in skill box
 function Skill(props) {
@@ -31,6 +32,9 @@ function Experience(props) {
 
 
 function About() {
+
+  const navigate = useNavigate();
+
   return (
     <React.Fragment>
       <div className="container-fluid flex flex-col items-center justify-start h-5/6 gap-y-8 p-24">
@@ -57,7 +61,8 @@ function About() {
 
         <div className="container w-1/3 max-w-1/3">
 
-          <PrimaryButton clickHandle={() => {}} icon="fa-solid fa-book" text="VIEW MY PROJECTS" />
+          { /*  Send to PROJECTS */ }
+          <PrimaryButton clickHandle={() => { window.location.href = "/projects"; }} icon="fa-solid fa-book" text="VIEW MY PROJECTS" />
 
           <br />
 
@@ -71,9 +76,12 @@ function About() {
             <Skill name="Java" />
             <Skill name="Redux" />
             <Skill name="Bootstrap" />
-            <Skill name="Tailwind" />
-            <Skill name="SQL Databases" />
-            <Skill name="REST APIs" />
+            <Skill name="Tailwind.css" />
+            <Skill name="SQL" />
+            <Skill name="RESTful APIs" />
+            <Skill name="Git" />
+            <Skill name="C#" />
+            <Skill name="C++" />
           </div>
 
         </div>

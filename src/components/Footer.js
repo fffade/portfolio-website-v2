@@ -9,6 +9,7 @@ function Footer(props) {
   const { location } = props;
 
   // Adjust background colour based on component
+  // TODO: Change this to a cleaner more organized method
   const bgColor = location.pathname === "/about" ? 'bg-neutral-900' : 'bg-slate-800';
 
   return (
