@@ -28,7 +28,7 @@ function App() {
   const FooterWithRouter = withRouter(Footer);
 
   return (
-    <div className="container-fluid flex flex-col overflow-x-hidden min-w-screen min-h-screen bg-slate-800">
+    <div className="container-fluid flex flex-col overflow-x-hidden w-full min-h-screen bg-slate-800">
 
         <Header />
 

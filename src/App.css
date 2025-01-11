@@ -22,6 +22,7 @@
 /* All */
 html, body
 {
+  width: 100vw;
   scroll-behavior: smooth;
   font-size: 12px;
   overflow: auto;

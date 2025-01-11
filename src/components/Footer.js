@@ -13,7 +13,7 @@ function Footer(props) {
   const bgColor = location.pathname === "/about" ? 'bg-neutral-900' : 'bg-slate-800';
 
   return (
-    <footer className={`mt-auto p-8 flex flex-col ${bgColor} text-neutral-200 text-sm w-screen h-16 justify-start text-center`}>
+    <footer className={`mt-auto p-8 flex flex-col ${bgColor} text-neutral-200 text-lg sm:text-sm w-screen h-16 justify-start text-center`}>
       <p>Omar Johnson &copy;2025</p>
     </footer>
   );
