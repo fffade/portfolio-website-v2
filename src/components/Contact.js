@@ -12,11 +12,11 @@ function Contact() {
   return (
     <div className="container-fluid flex flex-col w-full min-h-1/4 items-center gap-y-8 p-24">
 
-      <form className="container-fluid flex flex-col text-white text-2xl w-1/3 gap-y-8">
+      <form className="container-fluid flex flex-col text-white text-2xl w-full md:w-1/2 lg:w-1/3 gap-y-8">
 
         <p className="text-4xl text-white">Get in Touch</p>
 
-        <p className="text-xl text-gray-200">Have a lingering question? Need my help with something? Please leave your details and I'll respond as soon as I get the chance.</p>
+        <p className="text-2xl md:text-xl text-gray-200">Have a lingering question? Need my help with something? Please leave your details and I'll respond as soon as I get the chance.</p>
 
         <div className="container flex flex-col text-white text-2xl w-full gap-y-4">
           <label for="name">Name
