@@ -14,7 +14,8 @@ import { useNavigate } from 'react-router';
 // Skill displayed in skill box
 function Skill(props) {
   return (
-    <div className="text-2xl text-white p-4 pl-12 pr-12 text-nowrap rounded-xl bg-slate-700">
+    // Skills extend to full width on mobile devices
+    <div className="w-full md:w-min text-center text-3xl sm:text-2xl text-white p-4 pl-12 pr-12 text-nowrap rounded-xl bg-slate-700">
       <p>{props.name}</p>
     </div>
   );
@@ -69,7 +70,7 @@ function About() {
           <p className="text-3xl text-amber-400">Skills</p>
 
           { /* Responsive grid of different skills */ }
-          <div id="skills-box" className="container-fluid flex flex-row flex-wrap w-full max-w-full p-4 gap-0">
+          <div id="skills-box" className="container-fluid flex flex-row flex-wrap w-full max-w-full p-4 gap-4">
             <Skill name="JavaScript" />
             <Skill name="React" />
             <Skill name="Node.js" />
