@@ -7,7 +7,6 @@
 */
 import * as Buttons from './Buttons';
 import { useNavigate } from 'react-router-dom';
-import Footer from './Footer';
 import React from 'react';
 
 function HomePage() {
