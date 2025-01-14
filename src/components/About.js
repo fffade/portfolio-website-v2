@@ -6,8 +6,8 @@
   Defines the about page where visitor can learn more about me
 */
 import React from 'react';
-import { Link } from 'react-router-dom';
 import { HashLink } from 'react-router-hash-link';
+import { Link } from 'react-router-dom';
 import { PrimaryButton } from './Buttons';
 import { useNavigate } from 'react-router';
 
@@ -63,7 +63,9 @@ function About() {
         <div className="container w-3/4 md:w-1/2 lg:w-1/3">
 
           { /*  Send to PROJECTS */ }
-          <PrimaryButton clickHandle={() => { window.location.href = "/projects"; }} icon="fa-solid fa-book" text="VIEW MY PROJECTS" />
+          <Link to="/projects">
+            <PrimaryButton clickHandle={() => {}} icon="fa-solid fa-book" text="VIEW MY PROJECTS" />
+          </Link>
 
           <br />
 
@@ -91,6 +93,7 @@ function About() {
 
           <p className="text-3xl text-amber-500">Experience</p>
 
+          { /* List experiences */ }
           <div id="experience-box" className="container-fluid flex flex-col w-full p-4 gap-4">
             <Experience title="Freelancer" where="Independent" dateStart="3/5/2023" dateEnd="" icon="fa-solid fa-laptop-code" />
             <Experience title="Assistant Manager" where="Chipotle Mexican Grill" dateStart="9/1/2020" dateEnd="" icon="fa-solid fa-pepper-hot" />

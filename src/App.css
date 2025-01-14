@@ -25,7 +25,20 @@ html, body
   width: 100vw;
   scroll-behavior: smooth;
   font-size: 12px;
-  overflow: auto;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+/* Transitions */
+.fade-enter
+{
+  opacity: 1;
+}
+
+.fade-exit
+{
+  opacity: 0;
+  transition: opacity 0.5s;
 }
 
 /* Default text styling */
