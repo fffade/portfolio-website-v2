@@ -11,6 +11,8 @@ Within this website, you'll find a brief summary about me, along with my various
 
 This website was built primarily with the popular development framework, React.
 
++ Create-react-app, Tailwind.css, Font Awesome
+
 **How do I view the website?**
 
 Kindly visit https://www.fffadedev.com.

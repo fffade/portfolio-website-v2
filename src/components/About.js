@@ -24,9 +24,20 @@ function Skill(props) {
 // Experience listed in experience box
 function Experience(props) {
   return (
-    <div className="text-2xl text-slate-800 p-2 pl-6 pr-6 w-full rounded-xl bg-gray-300">
-      <p className="">{props.title} | {props.where} <i className={"text-3xl float-right " + props.icon} /></p>
+    <div className="text-2xl text-slate-700 p-2 pl-6 pr-6 w-full rounded-xl bg-gray-300">
+      <p className="">{props.title} | {props.where} <i className={"text-5xl md:text-3xl float-right " + props.icon} /></p>
       <p className="text-md">{props.dateStart} {props.dateEnd.length > 0 ? '-> ' + props.dateEnd : ''}</p>
+    </div>
+  );
+}
+
+// Certification listed in certification
+function Certification(props) {
+  return (
+    <div className="text-2xl text-black p-2 pl-6 pr-6 w-full rounded-xl bg-gray-50">
+      <p className="">{props.title} | {props.where} <i className={"text-5xl md:text-3xl float-right " + props.icon} /></p>
+      <p className="text-md">{props.dateIssued}</p>
+      <a className="text-sm" href={props.url} target="_blank"><i className="fa-solid fa-link" />&ensp;Open Certificate</a>
     </div>
   );
 }
@@ -40,27 +51,26 @@ function About() {
     <React.Fragment>
       <div className="container-fluid flex flex-col items-center justify-start h-5/6 gap-y-8 p-24">
 
-        <img className="w-64 h-64 rounded-full shadow-lg" src="/assets/profile.jpg" />
+        <img alt="Picture of Omar" className="w-64 h-64 rounded-full shadow-lg" src="/assets/profile.jpg" />
 
-        <div className="container w-3/4 md:w-1/2 lg:w-1/3">
+        <div className="container w-full md:w-1/2 lg:w-1/3">
           <p className="text-3xl md:text-2xl text-gray-200">Growing Up...</p>
           <p className="text-2xl md:text-xl text-white p-2">I had a passion for computer science as a young child. I would spend all my free time watching YouTube and studying various programming languages. I learnt to build my own websites and even learnt how to construct
           video games in the Unity engine. As I got into more difficult topics, I taught myself how to use web development frameworks and I built my own PC.</p>
         </div>
-        <div className="container w-3/4 md:w-1/2 lg:w-1/3">
+        <div className="container w-full md:w-1/2 lg:w-1/3">
           <p className="text-3xl md:text-2xl text-gray-200">Now...</p>
           <p className="text-2xl md:text-xl text-white p-2">I completed my B.S. Software Development. I've learnt more about web development than I have ever before, working on many of my own personal projects with varying purposes. Every obstacle to me is a learning opportunity. I am eager to take on any challenging client problem, contribute my web development and problem solving skills, and develop my own innovative solutions.</p>
         </div>
 
+        { /* Quick link to skills */ }
         <HashLink className="m-16 text-6xl md:text-4xl text-white transition-all hover:scale-110 hover:text-gray-200" to="/about#skills-box"><i className="fa-solid fa-arrow-down" /></HashLink>
-
-        { /* Skills and Experiences */ }
 
       </div>
 
       <div className="container-fluid flex flex-col bg-neutral-900 w-screen min-h-64 items-center justify-start gap-y-16 p-24">
 
-        <div className="container w-3/4 md:w-1/2 lg:w-1/3">
+        <div className="container w-full md:w-1/2 lg:w-1/3">
 
           { /*  Send to PROJECTS */ }
           <Link to="/projects">
@@ -69,6 +79,7 @@ function About() {
 
           <br />
 
+          { /* Skills and Experiences */ }
           <p className="text-3xl text-amber-400">Skills</p>
 
           { /* Responsive grid of different skills */ }
@@ -89,7 +100,7 @@ function About() {
 
         </div>
 
-        <div className="container w-3/4 md:w-1/2 lg:w-1/3">
+        <div className="container w-full md:w-1/2 lg:w-1/3">
 
           <p className="text-3xl text-amber-500">Experience</p>
 
@@ -97,6 +108,18 @@ function About() {
           <div id="experience-box" className="container-fluid flex flex-col w-full p-4 gap-4">
             <Experience title="Freelancer" where="Independent" dateStart="3/5/2023" dateEnd="" icon="fa-solid fa-laptop-code" />
             <Experience title="Assistant Manager" where="Chipotle Mexican Grill" dateStart="9/1/2020" dateEnd="" icon="fa-solid fa-pepper-hot" />
+          </div>
+
+        </div>
+
+        <div className="w-full md:w-1/2 lg:w-1/3">
+
+          <p className="text-3xl text-amber-500">Certifications</p>
+
+          { /* List certifications */ }
+          <div id="certifications-box" className="container-fluid flex flex-col w-full p-4 gap-4">
+            <Certification title="Responsive Web Design" where="FreeCodeCamp" dateIssued="03/2024" icon="fa-brands fa-html5" url="https://www.freecodecamp.org/certification/fffade/responsive-web-design"/>
+            <Certification title="JavaScript Algorithms and Data Structures" where="FreeCodeCamp" dateIssued="03/2024" icon="fa-brands fa-js" url="https://www.freecodecamp.org/certification/fffade/javascript-algorithms-and-data-structures-v8"/>
           </div>
 
         </div>
