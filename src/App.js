@@ -9,7 +9,7 @@ import About from './components/About';
 import Main from './components/Main';
 import Projects from './components/Projects';
 import Contact from './components/Contact';
-import Socials from './components/Socials';
+import ResumeDownload from './components/ResumeDownload';
 import React from 'react';
 import { Routes, Route } from 'react-router-dom';
 import { useLocation, useNavigate } from 'react-router';
@@ -23,6 +23,7 @@ function App() {
           <Route index element={<HomePage />} />
           <Route path="about" element={<About />} />
           <Route path="contact" element={<Contact />} />
+          <Route path="resume" element={<ResumeDownload />} />
         </Route>
       </Routes>
   );
