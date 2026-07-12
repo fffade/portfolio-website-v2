@@ -45,7 +45,7 @@ function Footer(props) {
 
   return (
     <footer className={`mt-auto p-8 flex flex-col ${bgColor} text-neutral-200 text-lg sm:text-sm w-screen h-16 justify-start text-center`}>
-      <p>Omar Johnson &copy;2025</p>
+      <p>Omar Johnson &copy;{new Date().getFullYear()}</p>
     </footer>
   );
 }
