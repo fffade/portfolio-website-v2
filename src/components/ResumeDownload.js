@@ -31,6 +31,8 @@ function ResumeDownload() {
 
   const navigate = useNavigate();
 
+  const RESUME_DOWNLOAD = "/assets/resume_07-11-26.pdf";
+
   return (
     <React.Fragment>
       <div className="container-fluid flex flex-col items-center self-center justify-start bg-gray-900 w-1/2 h-6/6 gap-y-8 p-8 m-16 relative">
@@ -55,7 +57,7 @@ function ResumeDownload() {
           <div className="flex flex-col gap-y-2 justify-center w-1/2 p-4">
               <p className="text-3xl text-center text-gray-200 font-bold">Resume Download</p>
               <p className="text-2xl text-center text-gray-300">Are you sure you wish to download this file?</p>
-              <Buttons.PrimaryButton clickHandle={() => { window.location.href = "/assets/resume.pdf"; }} icon="fa-solid fa-download" text="PROCEED TO RESUME" />
+              <Buttons.PrimaryButton clickHandle={() => { window.location.href = RESUME_DOWNLOAD; }} icon="fa-solid fa-download" text="PROCEED TO RESUME" />
           </div>
 
       </div>
