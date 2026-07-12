@@ -11,9 +11,6 @@ import React from 'react';
 
 function HomePage() {
 
-  const PORTFOLIO_URL = "https://docs.google.com/document/d/19EbnN8Limoq_Ucs27Xi2iWOIxdepigd5cwDOoUBDqbc/edit?usp=sharing";
-  const RESUME_DOWNLOAD = "/resume";
-
   return (
     <div className="container-fluid bg-slate-800 flex flex-col min-h-1/4 items-center justify-center text-center gap-y-12 p-20">
 
@@ -24,7 +21,7 @@ function HomePage() {
 
      <div className="buttons container-fluid flex flex-col w-1/2 md:w-1/3 lg:w-1/5 text-black items-center justify-between">
          <Buttons.PrimaryLink to="resume" icon="fa-solid fa-download" text="DOWNLOAD MY RESUME" />
-         <Buttons.PrimaryButton clickHandle={() => { window.location.href = PORTFOLIO_URL; }} icon="fa-solid fa-eye" text="VIEW MY WORK" />
+         <Buttons.PrimaryLink to="projects" icon="fa-solid fa-eye" text="VIEW MY PROJECTS" />
      </div>
     </div>
   );
