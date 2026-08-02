@@ -3,7 +3,7 @@
   Main page
   Created on: 1/14/25
 
-  Defines the main visual component where user can navigate to Home, About, or Contact
+  Defines the main visual component where user can navigate to Home, Experience, or Contact
 */
 import React from 'react';
 import Header from './Header';

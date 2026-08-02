@@ -1,6 +1,6 @@
 /*
   Omar Johnson
-  About Page
+  Experience Page
   1/5/25
 
   Defines the about page where visitor can learn more about me
@@ -22,7 +22,7 @@ function Skill(props) {
 }
 
 // Experience listed in experience box
-function Experience(props) {
+function ExperienceBox(props) {
   return (
     <div className="text-2xl text-black p-2 pl-6 pr-6 w-full rounded-xl bg-gray-50">
       <p className="">{props.title} | {props.where} <i className={"text-5xl md:text-3xl float-right " + props.icon} /></p>
@@ -43,33 +43,36 @@ function Certification(props) {
 }
 
 
-function About() {
+function Experience() {
 
   const navigate = useNavigate();
 
   return (
     <React.Fragment>
-      <div className="container-fluid flex flex-col items-center justify-start h-5/6 gap-y-8 p-24">
+      {/*<div className="container-fluid flex flex-col items-center justify-start h-5/6 gap-y-8 p-24">*/}
 
-        <img alt="Picture of Omar" className="w-64 h-64 rounded-full shadow-lg" src="/assets/profile.jpg" />
+      {/*  <img alt="Picture of Omar" className="w-64 h-64 rounded-full shadow-lg" src="/assets/profile.jpg" />*/}
 
-        <div className="container w-full md:w-1/2 lg:w-1/3">
-          <p className="text-3xl md:text-2xl text-gray-200">Growing Up...</p>
-          <p className="text-2xl md:text-xl text-white p-2">I had a passion for computer science as a young child. I would spend all my free time watching YouTube tutorials and guides
-          and studying various programming languages, starting with Python. I learnt how to code my own websites in HTML/CSS and I even learnt how to construct
-          video games using a library like pygame or the engine Unity. As I got into more difficult topics, I taught myself how to use web development frameworks and eventually built my own PC.</p>
-        </div>
-        <div className="container w-full md:w-1/2 lg:w-1/3">
-          <p className="text-3xl md:text-2xl text-gray-200">Now...</p>
-          <p className="text-2xl md:text-xl text-white p-2">I'm a summa cum laude graduate with a B.S. in Software Dev.
-              I've learnt more about software than I have ever before, working on a variety of personal projects.
-              Every obstacle to me is an opportunity to learn, and I continue to present myself as a self-starter.
-              I am ager to take on any challenging client problem, contribute my analytical optimization mindset and problem solving skills, and develop my own innovative solutions.</p>
-        </div>
+      {/*  <div className="container w-full md:w-1/2 lg:w-1/3">*/}
+      {/*    <p className="text-3xl md:text-2xl text-gray-200">Growing Up...</p>*/}
+      {/*    <p className="text-2xl md:text-xl text-white p-2">I had a passion for computer science as a young child. I would spend all my free time watching YouTube tutorials and guides*/}
+      {/*    and studying various programming languages, starting with Python. I learnt how to code my own websites in HTML/CSS and I even learnt how to construct*/}
+      {/*    video games using a library like pygame or the engine Unity. As I got into more difficult topics, I taught myself how to use web development frameworks and eventually built my own PC.</p>*/}
+      {/*  </div>*/}
+      {/*  <div className="container w-full md:w-1/2 lg:w-1/3">*/}
+      {/*    <p className="text-3xl md:text-2xl text-gray-200">Now...</p>*/}
+      {/*    <p className="text-2xl md:text-xl text-white p-2">I'm a summa cum laude graduate with a B.S. in Software Dev.*/}
+      {/*        I've learnt more about software than I have ever before, working on a variety of personal projects.*/}
+      {/*        Every obstacle to me is an opportunity to learn, and I continue to present myself as a self-starter.*/}
+      {/*        I am ager to take on any challenging client problem, contribute my analytical optimization mindset and problem solving skills, and develop my own innovative solutions.</p>*/}
+      {/*  </div>*/}
 
-        { /* Quick link to skills */ }
-        <HashLink className="m-16 text-6xl md:text-4xl text-white transition-all hover:scale-110 hover:text-gray-200" to="/about#skills-box"><i className="fa-solid fa-arrow-down" /></HashLink>
+      { /* Quick link to skills */ }
+      {/*  <HashLink className="m-16 text-6xl md:text-4xl text-white transition-all hover:scale-110 hover:text-gray-200" to="/about#skills-box"><i className="fa-solid fa-arrow-down" /></HashLink>*/}
 
+      {/*</div>*/}
+
+      <div className="container-fluid flex h-16 bg-slate-800">
       </div>
 
       <div className="container-fluid flex flex-col bg-neutral-900 w-screen min-h-64 items-center justify-start gap-y-16 p-24">
@@ -91,8 +94,8 @@ function About() {
 
           { /* List experiences */ }
           <div id="experience-box" className="container-fluid flex flex-col w-full p-4 gap-4">
-            <Experience title="Founder and Lead Developer" where="Evadi LLC" dateStart="05/01/2026" dateEnd="TODAY" icon="fa-solid fa-circle-half-stroke fa-flip-horizontal" />
-            <Experience title="Assistant Manager" where="Chipotle Mexican Grill" dateStart="9/1/2020" dateEnd="01/15/2025" icon="fa-solid fa-pepper-hot" />
+            <ExperienceBox title="Founder and Lead Developer" where="Evadi LLC" dateStart="05/01/2026" dateEnd="TODAY" icon="fa-solid fa-circle-half-stroke fa-flip-horizontal" />
+            <ExperienceBox title="Assistant Manager" where="Chipotle Mexican Grill" dateStart="9/1/2020" dateEnd="01/15/2025" icon="fa-solid fa-pepper-hot" />
           </div>
 
         </div>
@@ -135,4 +138,4 @@ function About() {
   );
 }
 
-export default About;
+export default Experience;

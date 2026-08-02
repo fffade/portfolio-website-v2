@@ -22,7 +22,7 @@ const getFooterColour = (path) =>
 {
 	switch(path)
 	{
-		case '/about':
+		case '/experience':
 			return 'bg-neutral-900';
 
 		case '/projects':

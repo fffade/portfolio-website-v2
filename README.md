@@ -2,7 +2,7 @@
 
 This repository contains the source code for my personal portfolio website.
 
-**About**
+**Experience**
 
 This website is dedicated to showcasing my skills as a Software Engineer to potential employers and/or clients.
 Within this website, you'll find a brief summary about me, along with my various skills, experiences, and projects.
